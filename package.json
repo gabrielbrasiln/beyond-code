@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "tailwindcss-intersect": "^2.0.1"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.4.15",
+    "tailwindcss-animated": "^1.1.2"
+  }
+}

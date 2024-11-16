@@ -1,0 +1,705 @@
+<!doctype html>
+<html lang="pt-br" class="scroll-smooth focus:scroll-auto bg-main-bg">
+<head>
+    <title>Beyond Code</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    
+    <script src="js/observer.min.js"></script>
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery-3.7.1.min.js"></script>
+    <link href="vendor/jquery/jquery-ui.css" rel="stylesheet">
+    <script src="vendor/jquery/jquery-ui.min.js" type="text/javascript"></script>
+
+    <link rel="icon" href="img/favicon.svg" sizes="32x32" />
+    <link rel="icon" href="img/favicon.svg" sizes="192x192" />
+    <link rel="apple-touch-icon" href="img/favicon.svg" />
+    <meta name="msapplication-TileImage" content="img/favicon.svg" />
+</head>
+
+<body class="bg-[url('img/bg-top.png')] bg-[90%_top] md:bg-top bg-no-repeat md:bg-[length:110%_auto] xl:bg-auto">
+
+<!-- Navbar -->
+<nav class="w-full">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-2 lg:px-4 xl:px-8 pt-4 xl:pt-8">
+      
+        <!-- Logo -->
+        <a href="index.html" class="flex">
+            <img src="./img/logo-temp.svg" class="h-13" alt="Logo Beyond Code">
+        </a>
+  
+        <!-- Botões do Menu -->
+        <div class="flex lg:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse sm:gap-x-3 lg:gap-x-5">
+           
+            <a href="#" class="text-white font-semibold bg-primary border border-primary px-2 md:px-4 lg:px-6 py-2 text-center hover:bg-secondary hover:scale-105 focus:ring-2 focus:outline-none focus:ring-blue-300 rounded-xl transition duration-300 text-sm md:text-md">
+                Quero participar
+            </a>
+
+            <button type="button" class="navbar-burger inline-flex items-center p-2 !ml-1 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden focus:outline-none hover:text-primary" aria-expanded="false">
+                <span class="sr-only">Abrir menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+        </div>
+      
+        <!-- Menu Principal -->
+        <div class="main-menu items-center max-h-0 overflow-hidden w-full lg:flex lg:w-auto lg:order-1 lg:max-h-screen transition-all duration-700">
+            <ul class="flex flex-col p-4 lg:p-0 mt-4 font-normal font-nunito text-center lg:text-left rounded-lg lg:space-x-2 xl:space-x-4 rtl:space-x-reverse lg:flex-row lg:mt-0">
+                <li>
+                    <a href="#evento" class="block p-2 text-white border-primary border-b-4 hover:border-secondary transition-all duration-500">O Evento</a>
+                </li>
+                <li>
+                    <a href="#palestrantes" class="block p-2 text-white border-transparent border-b-4 hover:border-secondary transition-all duration-500">Palestrantes</a>
+                </li>
+                <li>
+                    <a href="#ingresso" class="block p-2 text-white border-transparent border-b-4 hover:border-secondary transition-all duration-500">Comprar Ingresso</a>
+                </li>
+                <li>
+                    <a href="#patrocinaores" class="block p-2 text-white border-transparent border-b-4 hover:border-secondary transition-all duration-500">Comprar Ingresso</a>
+                </li>
+                <li>
+                    <a href="#faq" class="block p-2 text-white border-transparent border-b-4 hover:border-secondary transition-all duration-500">Dúvidas frenquentes</a>
+                </li>
+            </ul>
+        </div>
+  
+    </div>
+</nav>
+
+<section id="#evento" class="w-full overflow-hidden">
+    <div class="max-w-screen-xl flex flex-wrap items-center md:px-8 mx-auto pt-4 lg:pt-20 relative">
+        
+        <!-- Sobre o evento -->
+        <div class="w-full md:w-5/12 flex flex-col items-start sm:px-0">
+            <h2 class="text-info text-base font-semibold mb-1">
+                APRENDA COM CASES REAIS
+            </h2>
+            
+            <p class="my-4 text-white font-light text-md md:text-5xl">
+                EXPERÊNCIAS REAIS <span class="font-bold">TRANSFORMAÇÕES</span> INOVADORAS
+            </p>
+            
+            <p class="mb-5 lg:mb-12 text-white text-base">
+                Conheça as histórias por trás das soluções de sucesso e aprenda com quem está moldando o futuro da tecnologia.
+            </p>
+
+            <div class="flex flex-wrap w-full">
+
+                <p class="lg:text-xl text-white font-bold">
+                    20 de Novembro 2024<br>
+                    <span class="text-base font-normal">Local do evento</span>
+                </p>
+                
+                <div class="flex grow items-center justify-center">
+                    <a href="#" target="_blank" class="text-white font-semibold bg-primary border border-primary px-2 md:px-4 lg:px-6 py-2 text-center hover:bg-secondary hover:scale-105 focus:ring-2 focus:outline-none focus:ring-blue-300 rounded-xl transition duration-300 text-sm md:text-md">
+                        Comprar Ingresso
+                    </a>
+                </div>
+
+            </div>
+            
+        </div>
+
+        <div class="w-full md:w-7/12">
+            <img class="mx-auto w-full md:-mr-10 lg:-mr-20 xl:-mr-32 rounded-tl-xl" src="img/pic-evento.png" alt="Foto de um homem em uma sala dando uma palestra para pessoas que estão sentadas a sua frente.">
+        </div>
+
+        <div class="w-full flex flex-wrap text-white text-center mt-8 xl:mt-16">
+
+            <div class="w-1/2 md:w-1/4 px-4 py-4 lg:py-10 bg-gradient-to-r from-[#0d173aCC] to-[#0e0e0e00]">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-3 lg:mb-5">
+                    01
+                </h2>
+                <p class="text-sm md:text-base lg:text-xl xl:text-2xl font-light">
+                    Dia de evento Simultâneo
+                </p>
+            </div>
+            <div class="w-1/2 md:w-1/4 px-4 py-4 lg:py-10 bg-gradient-to-r from-[#0d173a80] to-[#0e0e0e00]">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-3 lg:mb-5">
+                    30
+                </h2>
+                <p class="text-sm md:text-base lg:text-xl xl:text-2xl font-light">
+                    Palestras<br>de cases
+                </p>
+            </div>
+            <div class="w-1/2 md:w-1/4 px-4 py-4 lg:py-10 bg-gradient-to-r from-[#0d173a60] to-[#0e0e0e00]">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-3 lg:mb-5">
+                    +20
+                </h2>
+                <p class="text-sm md:text-base lg:text-xl xl:text-2xl font-light">
+                    Cases reais<br>para escolher!
+                </p>
+            </div>
+            <div class="w-1/2 md:w-1/4 px-4 py-4 lg:py-10 bg-gradient-to-r from-[#0d173a40] to-[#0e0e0e00]">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-3 lg:mb-5">
+                    Plus
+                </h2>
+                <p class="text-sm md:text-base lg:text-xl xl:text-2xl font-light">
+                    Mentoria<br>Presencial
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<section id="trilhas" class="w-full mt-16 xl:mt-20 pt-8 bg-[url('img/bg-left.png')] bg-[90%_top] md:bg-top bg-no-repeat md:bg-[length:110%_auto] xl:bg-auto">
+
+    <!-- Trilhas -->
+    <div class="max-w-screen-lg flex flex-col items-center md:px-8 xl:px-16 mx-auto mb-40">
+        <h2 class="text-info text-xl tracking-wider font-semibold mb-0">
+            Experiências que vão além do comum
+        </h2>
+        <h1 class="mt-4 mb-10 text-white font-bold text-lg md:text-5xl uppercase">
+            Veja o que espera por você!
+        </h1>
+        <p class="text-white text-sm md:text-xl xl:text-2xl font-light">
+            Confira nossos eventos simultâneos
+        </p>
+
+        <div id="tabs" class="w-full mt-6">
+            <ul class="flex flex-wrap text-sm font-medium text-center text-white bg-gradient-to-br from-[#0d183b] to-[#0e0e0e] rounded-xl py-3 px-1 mb-12">
+                <li class="w-1/4 px-2">
+                    <a href="#trilha-1-presencial" class="inline-block w-full px-4 py-3 rounded-lg hover:bg-primary font-light text-base transition-all duration-500">
+                        TRILHA 1<br>
+                        <span class="font-semibold text-xl">PRESENCIAL</span>
+                    </a>
+                </li>
+                <li class="w-1/4 px-2">
+                    <a href="#trilha-2-presencial" class="inline-block w-full px-4 py-3 rounded-lg hover:bg-primary font-light text-base transition-all duration-500">
+                        TRILHA 2<br>
+                        <span class="font-semibold text-xl">PRESENCIAL</span>
+                    </a>
+                </li>
+                <li class="w-1/4 px-2">
+                    <a href="#trilha-1-online" class="inline-block w-full px-4 py-3 rounded-lg hover:bg-primary font-light text-base transition-all duration-500">
+                        TRILHA 1<br>
+                        <span class="font-semibold text-xl">ONLINE</span>
+                    </a>
+                </li>
+                <li class="w-1/4 px-2">
+                    <a href="#trilha-2-online" class="inline-block w-full px-4 py-3 rounded-lg hover:bg-primary font-light text-base transition-all duration-500">
+                        TRILHA 2<br>
+                        <span class="font-semibold text-xl">ONLINE</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Trilha 1 Presencial -->
+            <div id="trilha-1-presencial">
+                <!-- 1 -->
+                <div class="flex text-white lg:px-10">
+                    <div class="hidden md:block w-28 text-center font-semibold xl:text-lg shrink-0">
+                        09:00 - 11:00
+                    </div>
+                    <div class="px-3 lg:px-4 bg-step bg-top bg-repeat-y">
+                        <span class="block bg-secondary rounded-full w-8 h-8 leading-8 text-center">1</span>
+                    </div>
+                    <div class="pb-4 xl:pb-12 flex">
+                        <div>
+                            <small class="block md:hidden mb-1 sm:mb-2">09:00 - 11:00</small>
+                            <h4 class="mb-0 md:mb-1 font-bold text-2xl">Início</h4>
+                            <p class="text-sm">Abertura do evento e apresentação do cronograma</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="flex text-white lg:px-10">
+                    <div class="hidden md:block w-28 text-center font-semibold xl:text-lg shrink-0">
+                        11:00 - 12:00
+                    </div>
+                    <div class="px-3 lg:px-4 bg-step bg-top bg-repeat-y">
+                        <span class="block bg-secondary rounded-full w-8 h-8 leading-8 text-center">2</span>
+                    </div>
+                    <div class="pb-4 xl:pb-12 flex">
+                        <div class="w-12 h-12 mr-4 rounded-full overflow-hidden">
+                            <img class="w-full" src="img/palestrante_bruno-gianela.png">
+                        </div>
+                        <div>
+                            <small class="block md:hidden mb-1 sm:mb-2">11:00 - 12:00</small>
+                            <h4 class="mb-0 md:mb-1 font-bold text-2xl">Case 01</h4>
+                            <p class="text-lg"><span class="font-semibold">Bruno Gianella</span> • Superintendente <br>de Tecnologia - <span class="font-semibold">Too Seguros</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="flex text-white lg:px-10">
+                    <div class="hidden md:block w-28 text-center font-semibold xl:text-lg shrink-0">
+                        12:00 - 13:30
+                    </div>
+                    <div class="px-3 lg:px-4 bg-step bg-top bg-repeat-y">
+                        <span class="block bg-secondary rounded-full w-8 h-8 leading-8 text-center">3</span>
+                    </div>
+                    <div class="pb-4 xl:pb-12 flex">
+                        <div>
+                            <small class="block md:hidden mb-1 sm:mb-2">12:00 - 13:30</small>
+                            <h4 class="mb-0 md:mb-1 font-bold text-2xl">Almoço</h4>
+                            <p class="text-sm">Pausa nas palestras</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="flex text-white lg:px-10">
+                    <div class="hidden md:block w-28 text-center font-semibold xl:text-lg shrink-0">
+                        14:00 - 15:00
+                    </div>
+                    <div class="px-3 lg:px-4 bg-step bg-top bg-repeat-y">
+                        <span class="block bg-secondary rounded-full w-8 h-8 leading-8 text-center">4</span>
+                    </div>
+                    <div class="pb-4 xl:pb-12 flex">
+                        <div class="w-12 h-12 mr-4 rounded-full overflow-hidden">
+                            <img class="w-full" src="img/palestrante_bruno-gianela.png">
+                        </div>
+                        <div>
+                            <small class="block md:hidden mb-1 sm:mb-2">14:00 - 15:00</small>
+                            <h4 class="mb-0 md:mb-1 font-bold text-2xl">Case 01</h4>
+                            <p class="text-lg"><span class="font-semibold">Bruno Gianella</span> • Superintendente <br>de Tecnologia - <span class="font-semibold">Too Seguros</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="flex text-white lg:px-10">
+                    <div class="hidden md:block w-28 text-center font-semibold xl:text-lg shrink-0">
+                        15:00 - 16:00
+                    </div>
+                    <div class="px-3 lg:px-4 bg-step bg-top bg-repeat-y">
+                        <span class="block bg-secondary rounded-full w-8 h-8 leading-8 text-center">5</span>
+                    </div>
+                    <div class="pb-4 xl:pb-12 flex">
+                        <div class="w-12 h-12 mr-4 rounded-full overflow-hidden">
+                            <img class="w-full" src="img/palestrante_bruno-gianela.png">
+                        </div>
+                        <div>
+                            <small class="block md:hidden mb-1 sm:mb-2">15:00 - 16:00</small>
+                            <h4 class="mb-0 md:mb-1 font-bold text-2xl">Case 01</h4>
+                            <p class="text-lg"><span class="font-semibold">Bruno Gianella</span> • Superintendente <br>de Tecnologia - <span class="font-semibold">Too Seguros</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="flex text-white lg:px-10">
+                    <div class="hidden md:block w-28 text-center font-semibold xl:text-lg shrink-0">
+                        17:00 - 18:00
+                    </div>
+                    <div class="px-3 lg:px-4 bg-top bg-repeat-y">
+                        <span class="block bg-secondary rounded-full w-8 h-8 leading-8 text-center">6</span>
+                    </div>
+                    <div class="pb-4 xl:pb-12 flex">
+                        <div class="w-12 h-12 mr-4 rounded-full overflow-hidden">
+                            <img class="w-full" src="img/palestrante_bruno-gianela.png">
+                        </div>
+                        <div>
+                            <small class="block md:hidden mb-1 sm:mb-2">17:00 - 18:00</small>
+                            <h4 class="mb-0 md:mb-1 font-bold text-2xl">Case 01</h4>
+                            <p class="text-lg"><span class="font-semibold">Bruno Gianella</span> • Superintendente <br>de Tecnologia - <span class="font-semibold">Too Seguros</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trilha 2 Presencial -->
+            <div id="trilha-2-presencial">
+                <!-- 1 -->
+                <div class="flex text-white lg:px-10">
+                    <div class="hidden md:block w-28 text-center font-semibold xl:text-lg shrink-0">
+                        09:00 - 11:00
+                    </div>
+                    <div class="px-3 lg:px-4 bg-step bg-top bg-repeat-y">
+                        <span class="block bg-secondary rounded-full w-8 h-8 leading-8 text-center">1</span>
+                    </div>
+                    <div class="pb-4 xl:pb-12 flex">
+                        <div class="w-12 h-12 mr-4 rounded-full overflow-hidden">
+                            <img class="w-full" src="img/palestrante_bruno-gianela.png">
+                        </div>
+                        <div>
+                            <small class="block md:hidden mb-1 sm:mb-2">09:00 - 11:00</small>
+                            <h4 class="mb-0 md:mb-1 font-bold text-2xl">Case 01</h4>
+                            <p class="text-lg"><span class="font-semibold">Bruno Gianella</span> • Superintendente <br>de Tecnologia - <span class="font-semibold">Too Seguros</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="flex text-white lg:px-10">
+                    <div class="hidden md:block w-28 text-center font-semibold xl:text-lg shrink-0">
+                        11:00 - 12:00
+                    </div>
+                    <div class="px-3 lg:px-4 bg-step bg-top bg-repeat-y">
+                        <span class="block bg-secondary rounded-full w-8 h-8 leading-8 text-center">2</span>
+                    </div>
+                    <div class="pb-4 xl:pb-12 flex">
+                        <div class="w-12 h-12 mr-4 rounded-full overflow-hidden">
+                            <img class="w-full" src="img/palestrante_bruno-gianela.png">
+                        </div>
+                        <div>
+                            <small class="block md:hidden mb-1 sm:mb-2">11:00 - 12:00</small>
+                            <h4 class="mb-0 md:mb-1 font-bold text-2xl">Case 01</h4>
+                            <p class="text-lg"><span class="font-semibold">Bruno Gianella</span> • Superintendente <br>de Tecnologia - <span class="font-semibold">Too Seguros</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="flex text-white lg:px-10">
+                    <div class="hidden md:block w-28 text-center font-semibold xl:text-lg shrink-0">
+                        12:00 - 13:30
+                    </div>
+                    <div class="px-3 lg:px-4 bg-step bg-top bg-repeat-y">
+                        <span class="block bg-secondary rounded-full w-8 h-8 leading-8 text-center">3</span>
+                    </div>
+                    <div class="pb-4 xl:pb-12 flex">
+                        <div>
+                            <small class="block md:hidden mb-1 sm:mb-2">12:00 - 13:30</small>
+                            <h4 class="mb-0 md:mb-1 font-bold text-2xl">Almoço</h4>
+                            <p class="text-sm">Pausa nas palestras</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="flex text-white lg:px-10">
+                    <div class="hidden md:block w-28 text-center font-semibold xl:text-lg shrink-0">
+                        14:00 - 15:00
+                    </div>
+                    <div class="px-3 lg:px-4 bg-step bg-top bg-repeat-y">
+                        <span class="block bg-secondary rounded-full w-8 h-8 leading-8 text-center">4</span>
+                    </div>
+                    <div class="pb-4 xl:pb-12 flex">
+                        <div class="w-12 h-12 mr-4 rounded-full overflow-hidden">
+                            <img class="w-full" src="img/palestrante_bruno-gianela.png">
+                        </div>
+                        <div>
+                            <small class="block md:hidden mb-1 sm:mb-2">14:00 - 15:00</small>
+                            <h4 class="mb-0 md:mb-1 font-bold text-2xl">Case 01</h4>
+                            <p class="text-lg"><span class="font-semibold">Bruno Gianella</span> • Superintendente <br>de Tecnologia - <span class="font-semibold">Too Seguros</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="flex text-white lg:px-10">
+                    <div class="hidden md:block w-28 text-center font-semibold xl:text-lg shrink-0">
+                        15:00 - 16:00
+                    </div>
+                    <div class="px-3 lg:px-4 bg-step bg-top bg-repeat-y">
+                        <span class="block bg-secondary rounded-full w-8 h-8 leading-8 text-center">5</span>
+                    </div>
+                    <div class="pb-4 xl:pb-12 flex">
+                        <div class="w-12 h-12 mr-4 rounded-full overflow-hidden">
+                            <img class="w-full" src="img/palestrante_bruno-gianela.png">
+                        </div>
+                        <div>
+                            <small class="block md:hidden mb-1 sm:mb-2">15:00 - 16:00</small>
+                            <h4 class="mb-0 md:mb-1 font-bold text-2xl">Case 01</h4>
+                            <p class="text-lg"><span class="font-semibold">Bruno Gianella</span> • Superintendente <br>de Tecnologia - <span class="font-semibold">Too Seguros</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="flex text-white lg:px-10">
+                    <div class="hidden md:block w-28 text-center font-semibold xl:text-lg shrink-0">
+                        17:00 - 18:00
+                    </div>
+                    <div class="px-3 lg:px-4 bg-top bg-repeat-y">
+                        <span class="block bg-secondary rounded-full w-8 h-8 leading-8 text-center">6</span>
+                    </div>
+                    <div class="pb-4 xl:pb-12 flex">
+                        <div class="w-12 h-12 mr-4 rounded-full overflow-hidden">
+                            <img class="w-full" src="img/palestrante_bruno-gianela.png">
+                        </div>
+                        <div>
+                            <small class="block md:hidden mb-1 sm:mb-2">17:00 - 18:00</small>
+                            <h4 class="mb-0 md:mb-1 font-bold text-2xl">Case 01</h4>
+                            <p class="text-lg"><span class="font-semibold">Bruno Gianella</span> • Superintendente <br>de Tecnologia - <span class="font-semibold">Too Seguros</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trilha 1 online -->
+            <div id="trilha-1-online">
+                <!-- 1 -->
+                <div class="flex text-white lg:px-10">
+                    <div class="hidden md:block w-28 text-center font-semibold xl:text-lg shrink-0">
+                        09:00 - 11:00
+                    </div>
+                    <div class="px-3 lg:px-4 bg-step bg-top bg-repeat-y">
+                        <span class="block bg-secondary rounded-full w-8 h-8 leading-8 text-center">1</span>
+                    </div>
+                    <div class="pb-4 xl:pb-12 flex">
+                        <div class="w-12 h-12 mr-4 rounded-full overflow-hidden">
+                            <img class="w-full" src="img/palestrante_bruno-gianela.png">
+                        </div>
+                        <div>
+                            <small class="block md:hidden mb-1 sm:mb-2">09:00 - 11:00</small>
+                            <h4 class="mb-0 md:mb-1 font-bold text-2xl">Case 01</h4>
+                            <p class="text-lg"><span class="font-semibold">Bruno Gianella</span> • Superintendente <br>de Tecnologia - <span class="font-semibold">Too Seguros</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="flex text-white lg:px-10">
+                    <div class="hidden md:block w-28 text-center font-semibold xl:text-lg shrink-0">
+                        11:00 - 12:00
+                    </div>
+                    <div class="px-3 lg:px-4 bg-step bg-top bg-repeat-y">
+                        <span class="block bg-secondary rounded-full w-8 h-8 leading-8 text-center">2</span>
+                    </div>
+                    <div class="pb-4 xl:pb-12 flex">
+                        <div class="w-12 h-12 mr-4 rounded-full overflow-hidden">
+                            <img class="w-full" src="img/palestrante_bruno-gianela.png">
+                        </div>
+                        <div>
+                            <small class="block md:hidden mb-1 sm:mb-2">11:00 - 12:00</small>
+                            <h4 class="mb-0 md:mb-1 font-bold text-2xl">Case 01</h4>
+                            <p class="text-lg"><span class="font-semibold">Bruno Gianella</span> • Superintendente <br>de Tecnologia - <span class="font-semibold">Too Seguros</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="flex text-white lg:px-10">
+                    <div class="hidden md:block w-28 text-center font-semibold xl:text-lg shrink-0">
+                        12:00 - 13:30
+                    </div>
+                    <div class="px-3 lg:px-4 bg-step bg-top bg-repeat-y">
+                        <span class="block bg-secondary rounded-full w-8 h-8 leading-8 text-center">3</span>
+                    </div>
+                    <div class="pb-4 xl:pb-12 flex">
+                        <div>
+                            <small class="block md:hidden mb-1 sm:mb-2">12:00 - 13:30</small>
+                            <h4 class="mb-0 md:mb-1 font-bold text-2xl">Almoço</h4>
+                            <p class="text-sm">Pausa nas palestras</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="flex text-white lg:px-10">
+                    <div class="hidden md:block w-28 text-center font-semibold xl:text-lg shrink-0">
+                        14:00 - 15:00
+                    </div>
+                    <div class="px-3 lg:px-4 bg-step bg-top bg-repeat-y">
+                        <span class="block bg-secondary rounded-full w-8 h-8 leading-8 text-center">4</span>
+                    </div>
+                    <div class="pb-4 xl:pb-12 flex">
+                        <div class="w-12 h-12 mr-4 rounded-full overflow-hidden">
+                            <img class="w-full" src="img/palestrante_bruno-gianela.png">
+                        </div>
+                        <div>
+                            <small class="block md:hidden mb-1 sm:mb-2">14:00 - 15:00</small>
+                            <h4 class="mb-0 md:mb-1 font-bold text-2xl">Case 01</h4>
+                            <p class="text-lg"><span class="font-semibold">Bruno Gianella</span> • Superintendente <br>de Tecnologia - <span class="font-semibold">Too Seguros</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="flex text-white lg:px-10">
+                    <div class="hidden md:block w-28 text-center font-semibold xl:text-lg shrink-0">
+                        15:00 - 16:00
+                    </div>
+                    <div class="px-3 lg:px-4 bg-step bg-top bg-repeat-y">
+                        <span class="block bg-secondary rounded-full w-8 h-8 leading-8 text-center">5</span>
+                    </div>
+                    <div class="pb-4 xl:pb-12 flex">
+                        <div class="w-12 h-12 mr-4 rounded-full overflow-hidden">
+                            <img class="w-full" src="img/palestrante_bruno-gianela.png">
+                        </div>
+                        <div>
+                            <small class="block md:hidden mb-1 sm:mb-2">15:00 - 16:00</small>
+                            <h4 class="mb-0 md:mb-1 font-bold text-2xl">Case 01</h4>
+                            <p class="text-lg"><span class="font-semibold">Bruno Gianella</span> • Superintendente <br>de Tecnologia - <span class="font-semibold">Too Seguros</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="flex text-white lg:px-10">
+                    <div class="hidden md:block w-28 text-center font-semibold xl:text-lg shrink-0">
+                        17:00 - 18:00
+                    </div>
+                    <div class="px-3 lg:px-4 bg-top bg-repeat-y">
+                        <span class="block bg-secondary rounded-full w-8 h-8 leading-8 text-center">6</span>
+                    </div>
+                    <div class="pb-4 xl:pb-12 flex">
+                        <div class="w-12 h-12 mr-4 rounded-full overflow-hidden">
+                            <img class="w-full" src="img/palestrante_bruno-gianela.png">
+                        </div>
+                        <div>
+                            <small class="block md:hidden mb-1 sm:mb-2">17:00 - 18:00</small>
+                            <h4 class="mb-0 md:mb-1 font-bold text-2xl">Case 01</h4>
+                            <p class="text-lg"><span class="font-semibold">Bruno Gianella</span> • Superintendente <br>de Tecnologia - <span class="font-semibold">Too Seguros</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trilha 2 online -->
+            <div id="trilha-2-online">
+                <!-- 1 -->
+                <div class="flex text-white lg:px-10">
+                    <div class="hidden md:block w-28 text-center font-semibold xl:text-lg shrink-0">
+                        09:00 - 11:00
+                    </div>
+                    <div class="px-3 lg:px-4 bg-step bg-top bg-repeat-y">
+                        <span class="block bg-secondary rounded-full w-8 h-8 leading-8 text-center">1</span>
+                    </div>
+                    <div class="pb-4 xl:pb-12 flex">
+                        <div class="w-12 h-12 mr-4 rounded-full overflow-hidden">
+                            <img class="w-full" src="img/palestrante_bruno-gianela.png">
+                        </div>
+                        <div>
+                            <small class="block md:hidden mb-1 sm:mb-2">09:00 - 11:00</small>
+                            <h4 class="mb-0 md:mb-1 font-bold text-2xl">Case 01</h4>
+                            <p class="text-lg"><span class="font-semibold">Bruno Gianella</span> • Superintendente <br>de Tecnologia - <span class="font-semibold">Too Seguros</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="flex text-white lg:px-10">
+                    <div class="hidden md:block w-28 text-center font-semibold xl:text-lg shrink-0">
+                        11:00 - 12:00
+                    </div>
+                    <div class="px-3 lg:px-4 bg-step bg-top bg-repeat-y">
+                        <span class="block bg-secondary rounded-full w-8 h-8 leading-8 text-center">2</span>
+                    </div>
+                    <div class="pb-4 xl:pb-12 flex">
+                        <div class="w-12 h-12 mr-4 rounded-full overflow-hidden">
+                            <img class="w-full" src="img/palestrante_bruno-gianela.png">
+                        </div>
+                        <div>
+                            <small class="block md:hidden mb-1 sm:mb-2">11:00 - 12:00</small>
+                            <h4 class="mb-0 md:mb-1 font-bold text-2xl">Case 01</h4>
+                            <p class="text-lg"><span class="font-semibold">Bruno Gianella</span> • Superintendente <br>de Tecnologia - <span class="font-semibold">Too Seguros</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="flex text-white lg:px-10">
+                    <div class="hidden md:block w-28 text-center font-semibold xl:text-lg shrink-0">
+                        12:00 - 13:30
+                    </div>
+                    <div class="px-3 lg:px-4 bg-step bg-top bg-repeat-y">
+                        <span class="block bg-secondary rounded-full w-8 h-8 leading-8 text-center">3</span>
+                    </div>
+                    <div class="pb-4 xl:pb-12 flex">
+                        <div>
+                            <small class="block md:hidden mb-1 sm:mb-2">12:00 - 13:30</small>
+                            <h4 class="mb-0 md:mb-1 font-bold text-2xl">Almoço</h4>
+                            <p class="text-sm">Pausa nas palestras</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="flex text-white lg:px-10">
+                    <div class="hidden md:block w-28 text-center font-semibold xl:text-lg shrink-0">
+                        14:00 - 15:00
+                    </div>
+                    <div class="px-3 lg:px-4 bg-step bg-top bg-repeat-y">
+                        <span class="block bg-secondary rounded-full w-8 h-8 leading-8 text-center">4</span>
+                    </div>
+                    <div class="pb-4 xl:pb-12 flex">
+                        <div class="w-12 h-12 mr-4 rounded-full overflow-hidden">
+                            <img class="w-full" src="img/palestrante_bruno-gianela.png">
+                        </div>
+                        <div>
+                            <small class="block md:hidden mb-1 sm:mb-2">14:00 - 15:00</small>
+                            <h4 class="mb-0 md:mb-1 font-bold text-2xl">Case 01</h4>
+                            <p class="text-lg"><span class="font-semibold">Bruno Gianella</span> • Superintendente <br>de Tecnologia - <span class="font-semibold">Too Seguros</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="flex text-white lg:px-10">
+                    <div class="hidden md:block w-28 text-center font-semibold xl:text-lg shrink-0">
+                        15:00 - 16:00
+                    </div>
+                    <div class="px-3 lg:px-4 bg-step bg-top bg-repeat-y">
+                        <span class="block bg-secondary rounded-full w-8 h-8 leading-8 text-center">5</span>
+                    </div>
+                    <div class="pb-4 xl:pb-12 flex">
+                        <div class="w-12 h-12 mr-4 rounded-full overflow-hidden">
+                            <img class="w-full" src="img/palestrante_bruno-gianela.png">
+                        </div>
+                        <div>
+                            <small class="block md:hidden mb-1 sm:mb-2">15:00 - 16:00</small>
+                            <h4 class="mb-0 md:mb-1 font-bold text-2xl">Case 01</h4>
+                            <p class="text-lg"><span class="font-semibold">Bruno Gianella</span> • Superintendente <br>de Tecnologia - <span class="font-semibold">Too Seguros</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="flex text-white lg:px-10">
+                    <div class="hidden md:block w-28 text-center font-semibold xl:text-lg shrink-0">
+                        17:00 - 18:00
+                    </div>
+                    <div class="px-3 lg:px-4 bg-top bg-repeat-y">
+                        <span class="block bg-secondary rounded-full w-8 h-8 leading-8 text-center">6</span>
+                    </div>
+                    <div class="pb-4 xl:pb-12 flex">
+                        <div class="w-12 h-12 mr-4 rounded-full overflow-hidden">
+                            <img class="w-full" src="img/palestrante_bruno-gianela.png">
+                        </div>
+                        <div>
+                            <small class="block md:hidden mb-1 sm:mb-2">17:00 - 18:00</small>
+                            <h4 class="mb-0 md:mb-1 font-bold text-2xl">Case 01</h4>
+                            <p class="text-lg"><span class="font-semibold">Bruno Gianella</span> • Superintendente <br>de Tecnologia - <span class="font-semibold">Too Seguros</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+    
+<script> 
+
+    $(function() {
+		$( "#tabs" ).tabs({
+            active: 0,
+            show: { effect: "fadeIn", duration: 300 },
+            hide: { effect: "fadeOut", duration: 300 }
+        });
+	});
+
+    // Accorion
+    $(document).ready(function() {
+      $(".set > a").on("click", function() {
+        if ($(this).hasClass("active")) {
+          $(this).removeClass("active");
+          $(this)
+            .siblings(".content")
+            .slideUp(200);
+        } else {
+          $(".set > a").removeClass("active");
+          $(this).addClass("active");
+          $(".content").slideUp(200);
+          $(this)
+            .siblings(".content")
+            .slideDown(200);
+        }
+      });
+    });
+  
+    // Mobile menu
+    document.addEventListener('DOMContentLoaded', function() {
+        // open
+        const burger = document.querySelectorAll('.navbar-burger');
+        const menu = document.querySelectorAll('.main-menu');
+  
+        if (burger.length && menu.length) {
+            for (var i = 0; i < burger.length; i++) {
+                burger[i].addEventListener('click', function() {
+                    for (var j = 0; j < menu.length; j++) {
+                        menu[j].classList.toggle('!max-h-screen');
+                    }
+                });
+            }
+        }
+    });
+  
+</script>
+
+</body>
+</html>
