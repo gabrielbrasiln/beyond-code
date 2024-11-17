@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="pt-br" class="scroll-smooth focus:scroll-auto bg-main-bg">
+<head>
+    <title>Beyond Code</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    
+    <script src="js/observer.min.js"></script>
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery-3.7.1.min.js"></script>
+    <link href="vendor/jquery/jquery-ui.css" rel="stylesheet">
+    <script src="vendor/jquery/jquery-ui.min.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css"/>
+
+    <link rel="icon" href="img/favicon.svg" sizes="32x32" />
+    <link rel="icon" href="img/favicon.svg" sizes="192x192" />
+    <link rel="apple-touch-icon" href="img/favicon.svg" />
+    <meta name="msapplication-TileImage" content="img/favicon.svg" />
+</head>
+
+<body class="bg-[url('img/bg-top.png')] bg-right-top bg-no-repeat">
+
+<!-- Navbar -->
+<nav class="w-full">
+    <div class="px-4 md:px-20 flex flex-wrap items-center justify-between mx-auto py-4 px-2 pt-4 md:pt-8">
+      
+        <!-- Logo -->
+        <a href="index.html" class="flex">
+            <img src="./img/logo-temp.svg" class="h-13" alt="Logo Beyond Code">
+        </a>
+  
+        <!-- Botões do Menu -->
+        <div class="flex lg:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse sm:gap-x-3 lg:gap-x-5">
+           
+            <a href="#" class="text-white font-semibold bg-primary border border-primary px-2 px-4 lg:px-6 py-2 text-center hover:bg-secondary hover:scale-105 focus:ring-2 focus:outline-none focus:ring-blue-300 rounded-full md:rounded-xl transition duration-300 text-sm md:text-md">
+                Quero participar
+            </a>
+
+            <button type="button" class="navbar-burger hidden md:inline-flex lg:hidden items-center p-2 !ml-1 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg focus:outline-none hover:text-primary" aria-expanded="false">
+                <span class="sr-only">Abrir menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+        </div>
+      
+        <!-- Menu Principal -->
+        <div class="main-menu items-center max-h-0 overflow-hidden w-full lg:flex lg:w-auto lg:order-1 lg:max-h-screen transition-all duration-700">
+            <ul class="flex flex-col p-4 lg:p-0 mt-4 font-normal font-nunito text-center lg:text-left rounded-lg lg:space-x-2 xl:space-x-4 rtl:space-x-reverse lg:flex-row lg:mt-0">
+                <li>
+                    <a href="index." class="block p-2 text-white border-primary border-b-4 hover:border-secondary transition-all duration-500">O Evento</a>
+                </li>
+                <li>
+                    <a href="#palestrantes" class="block p-2 text-white border-transparent border-b-4 hover:border-secondary transition-all duration-500">Palestrantes</a>
+                </li>
+                <li>
+                    <a href="#ingresso" class="block p-2 text-white border-transparent border-b-4 hover:border-secondary transition-all duration-500">Comprar Ingresso</a>
+                </li>
+                <li>
+                    <a href="#patrocinaores" class="block p-2 text-white border-transparent border-b-4 hover:border-secondary transition-all duration-500">Patrocinadores</a>
+                </li>
+                <li>
+                    <a href="#faq" class="block p-2 text-white border-transparent border-b-4 hover:border-secondary transition-all duration-500">Dúvidas frenquentes</a>
+                </li>
+            </ul>
+        </div>
+  
+    </div>
+</nav>
+
+<!-- Palestrantes -->
+<section id="palestrantes" class="w-full text-center pt-20 md:pt-20 bg-[url('img/bg-left.png')] bg-[-80px_230px] md:bg-left-top  bg-no-repeat opacity-0 intersect:animate-fade-up animate-once animate-delay-300 intersect-once">
+    <h2 class="text-white font-light text-2xl md:text-3xl lg:text-5xl uppercase">
+        Encontro com Especialistas:
+    </h2>
+    <h1 class="mt-2 md:mt-4 mb-10 text-white font-bold text-2xl md:text-3xl lg:text-5xl uppercase">
+        Conheça Nossos Palestrantes
+    </h1>
+
+    <div class="w-full md:bg-[url('img/bg-palestrantes.png')] bg-contain bg-center bg-no-repeat xl:px-20 relative">
+
+        <div class="max-w-screen-lg mx-auto mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4 px-4 lg:px-2 mb-8 md:mb-12 font-nunito text-center text-white opacity-0 intersect:animate-fade-up animate-once animate-delay-700 intersect-once">
+            
+            <!-- Palestrante 1 -->
+            <div class="w-full bg-[url('img/palestrantes/palestrante_bruno-gianela.png')] bg-slate-200 bg-center h-96 xl:h-[400px] bg-cover relative hover:scale-105 transition-all duration-300">
+                <div class="absolute w-full h-48 bottom-0 bg-gradient-to-t from-[#000000cc] to-[#00000000]">
+                    <div class="absolute top-28 xl:top-24 w-full">
+                        <h3 class="text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide">
+                            Bruno Giannella
+                        </h3>
+                        <p class="font-light text-sm xl:text-base px-4">
+                            Superintendente de tecnologia - <span class="font-bold">Too Seguros</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Palestrante 2 -->
+            <div class="w-full bg-[url('img/palestrantes/palestrante_eduardo-matos.png')] bg-slate-200 bg-center h-96 xl:h-[400px] bg-cover relative hover:scale-105 transition-all duration-300">
+                <div class="absolute w-full h-48 bottom-0 bg-gradient-to-t from-[#000000cc] to-[#00000000]">
+                    <div class="absolute top-28 xl:top-24 w-full">
+                        <h3 class="text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide">
+                            Eduaro Matos
+                        </h3>
+                        <p class="font-light text-sm xl:text-base px-4">
+                            Engineering Manager - <span class="font-bold">SumUp</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Palestrante 3 -->
+            <div class="w-full bg-[url('img/palestrantes/palestrante_waldyr-felix.png')] bg-slate-200 bg-center h-96 xl:h-[400px] bg-cover relative hover:scale-105 transition-all duration-300">
+                <div class="absolute w-full h-48 bottom-0 bg-gradient-to-t from-[#000000cc] to-[#00000000]">
+                    <div class="absolute top-28 xl:top-24 w-full">
+                        <h3 class="text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide">
+                            Waldyr Felix
+                        </h3>
+                        <p class="font-light text-sm xl:text-base px-4">
+                            Fundador Diretor Executivo - <span class="font-bold">Gow</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Palestrante 4 -->
+            <div class="w-full bg-[url('img/palestrantes/palestrante_bruno-gianela.png')] bg-slate-200 bg-center h-96 xl:h-[400px] bg-cover relative hover:scale-105 transition-all duration-300">
+                <div class="absolute w-full h-48 bottom-0 bg-gradient-to-t from-[#000000cc] to-[#00000000]">
+                    <div class="absolute top-28 xl:top-24 w-full">
+                        <h3 class="text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide">
+                            Nome do palestrante
+                        </h3>
+                        <p class="font-light text-sm xl:text-base px-4">
+                            Especialidade - <span class="font-bold">Empresa</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Palestrante 5 -->
+            <div class="w-full bg-[url('img/palestrantes/palestrante_eduardo-matos.png')] bg-slate-200 bg-center h-96 xl:h-[400px] bg-cover relative hover:scale-105 transition-all duration-300">
+                <div class="absolute w-full h-48 bottom-0 bg-gradient-to-t from-[#000000cc] to-[#00000000]">
+                    <div class="absolute top-28 xl:top-24 w-full">
+                        <h3 class="text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide">
+                            Nome do palestrante
+                        </h3>
+                        <p class="font-light text-sm xl:text-base px-4">
+                            Especialidade - <span class="font-bold">Empresa</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Palestrante 6 -->
+            <div class="w-full bg-[url('img/palestrantes/palestrante_waldyr-felix.png')] bg-slate-200 bg-center h-96 xl:h-[400px] bg-cover relative hover:scale-105 transition-all duration-300">
+                <div class="absolute w-full h-48 bottom-0 bg-gradient-to-t from-[#000000cc] to-[#00000000]">
+                    <div class="absolute top-28 xl:top-24 w-full">
+                        <h3 class="text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide">
+                            Nome do palestrante
+                        </h3>
+                        <p class="font-light text-sm xl:text-base px-4">
+                            Especialidade - <span class="font-bold">Empresa</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Palestrante 7 -->
+            <div class="w-full bg-[url('img/palestrantes/palestrante_bruno-gianela.png')] bg-slate-200 bg-center h-96 xl:h-[400px] bg-cover relative hover:scale-105 transition-all duration-300">
+                <div class="absolute w-full h-48 bottom-0 bg-gradient-to-t from-[#000000cc] to-[#00000000]">
+                    <div class="absolute top-28 xl:top-24 w-full">
+                        <h3 class="text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide">
+                            Nome do palestrante
+                        </h3>
+                        <p class="font-light text-sm xl:text-base px-4">
+                            Especialidade - <span class="font-bold">Empresa</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Palestrante 8 -->
+            <div class="w-full bg-[url('img/palestrantes/palestrante_eduardo-matos.png')] bg-slate-200 bg-center h-96 xl:h-[400px] bg-cover relative hover:scale-105 transition-all duration-300">
+                <div class="absolute w-full h-48 bottom-0 bg-gradient-to-t from-[#000000cc] to-[#00000000]">
+                    <div class="absolute top-28 xl:top-24 w-full">
+                        <h3 class="text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide">
+                            Nome do palestrante
+                        </h3>
+                        <p class="font-light text-sm xl:text-base px-4">
+                            Especialidade - <span class="font-bold">Empresa</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Palestrante 9 -->
+            <div class="w-full bg-[url('img/palestrantes/palestrante_waldyr-felix.png')] bg-slate-200 bg-center h-96 xl:h-[400px] bg-cover relative hover:scale-105 transition-all duration-300">
+                <div class="absolute w-full h-48 bottom-0 bg-gradient-to-t from-[#000000cc] to-[#00000000]">
+                    <div class="absolute top-28 xl:top-24 w-full">
+                        <h3 class="text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide">
+                            Nome do palestrante
+                        </h3>
+                        <p class="font-light text-sm xl:text-base px-4">
+                            Especialidade - <span class="font-bold">Empresa</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+
+        <div class="w-full md:bg-[url('img/bg-right-bottom.png')] bg-right-bottom bg-no-repeat h-72 bottom-0 left-0 absolute">
+
+        </div>
+    </div>
+
+
+</section>
+
+<!-- Ingressos -->
+<section id="ingresso" class="w-full text-center pt-20 md:pt-40 xl:px-20 bg-[url('img/bg-left-2.png')] md:bg-left-top bg-[-130px_0] bg-no-repeat opacity-0 intersect:animate-fade-up animate-once animate-delay-500 intersect-once intersect-half">
+
+    <h2 class="text-info text-base md:text-xl tracking-wider font-semibold mb-0">
+        Vagas limitadas
+    </h2>
+    <h1 class="mt-2 m:mt-4 mb-10 text-white font-bold text-xl md:text-5xl uppercase">
+        Garanta sua participação
+    </h1>
+
+    <div class="max-w-screen-lg mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 px-4 lg:px-2 mb-8 md:mb-12 text-left text-white">
+        <div class="w-full bg-secondary p-4 lg:p-10">
+            <div class="flex flex-col gap-4 lx:gap-6">
+                <p class="text-base lg:text-xl xl:text-2xl font-semibold">
+                    Presencial
+                </p>
+                <h2 class="text-6xl xl:text-7xl font-bold">
+                    R$497
+                </h2>
+                <p class="text-base lg:text-lg">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                </p>
+                <a href="#" target="_blank" class="w-full text-white inline-block font-semibold bg-primary border border-primary px-2 px-4 lg:px-6 py-3 my-4 text-center hover:scale-105 focus:ring-2 focus:outline-none focus:ring-blue-300 rounded-full md:rounded-xl transition duration-300 text-sm md:text-lg xl:text-xl">
+                    Comprar agora
+                </a>
+            </div>
+        </div>
+
+        <div class="w-full bg-gradient-to-br from-[#0d183b] to-[#0e0e0e] p-4 lg:p-10">
+            <div class="flex flex-col gap-4 lx:gap-6">
+                <p class="text-base lg:text-xl xl:text-2xl font-semibold">
+                    Online
+                </p>
+                <h2 class="text-6xl xl:text-7xl font-bold">
+                    R$147
+                </h2>
+                <p class="text-base lg:text-lg">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                </p>
+                <a href="#" target="_blank" class="w-full text-white inline-block font-semibold border border-w hite px-2 md:px-4 lg:px-6 py-3 my-4 text-center hover:scale-105 focus:ring-2 focus:outline-none focus:ring-blue-300 rounded-full md:rounded-xl transition duration-300 text-sm md:text-lg xl:text-xl">
+                    Comprar agora
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mapa -->
+<section id="mapa" class="w-full mt-8 md:mt-24 pt-12 pb-24 md:pb-40 xl:pb-48 xl:px-20 bg-[url('img/bg-right-2m.png')] md:bg-[url('img/bg-right-2.png')] bg-right-bottom bg-no-repeat opacity-0 intersect:animate-fade-up animate-once animate-delay-500 intersect-once">
+    <div class="max-w-screen-2xl mx-auto xl:px-20 relative">
+        <iframe class="w-full h-72 md:h-[500px]"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233845.16639819992!2d-46.76010356058371!3d-23.682010785545135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1731768283048!5m2!1spt-BR!2sbr"
+            width="1535" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+        <div class="md:w-2/3 lg:w-1/2  bg-gradient-to-br from-[#0d183b] to-[#0e0e0e] mx-4 -mt-5 md:-mt-16 lg:-mt-32 md:ml-16 lg:ml-24 p-4 lg:p-10 text-white relative">
+            <div class="flex flex-col gap-4 lx:gap-6">
+                <p class="text-md lg:text-lg xl:text-xl font-normal">
+                    Localização do evento presencial
+                </p>
+                <h2 class="text-2xl md:text-5xl font-semibold mb-4">
+                    SAIBA COMO CHEGAR EM NOSSO EVENTO
+                </h2>
+                <a href="#" target="_blank" class="mx-auto text-white block font-semibold bg-primary border border-primary px-4 lg:px-6 py-3 -mb-10 lg:-mb-16 text-center hover:scale-105 focus:ring-2 focus:outline-none focus:ring-blue-300 rounded-full  md:rounded-xl transition duration-300 text-sm md:text-lg xl:text-xl">
+                    Comprar Ingresso
+                </a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Patrocinadores -->
+<section id="patrocinadores" class="max-w-screen-2xl mx-auto xl:px-20 text-center opacity-0 intersect:animate-fade-up animate-once animate-delay-500 intersect-once">
+
+    <h2 class="text-info text-base md:text-xl tracking-wider font-semibold mb-0">
+        Parceiros do evento
+    </h2>
+    <h1 class="mt-2 md:mt-4 mb-10 text-white font-bold text-xl md:text-5xl uppercase">
+        Nossos patrocinadores
+    </h1>
+
+    <div class="logos-slick my-16 xl:mb-24">
+        <div class="h-10 px-8">
+            <img class="block mx-auto" src="img/patrocinadores/patrocinador-logo.svg" alt="Logo do Patrocinador X">
+        </div>
+        <div class="h-10 px-8">
+            <img class="block mx-auto" src="img/patrocinadores/patrocinador-logo.svg" alt="Logo do Patrocinador X">
+        </div>
+        <div class="h-10 px-8">
+            <img class="block mx-auto" src="img/patrocinadores/patrocinador-logo.svg" alt="Logo do Patrocinador X">
+        </div>
+        <div class="h-10 px-8">
+            <img class="block mx-auto" src="img/patrocinadores/patrocinador-logo.svg" alt="Logo do Patrocinador X">
+        </div>
+        <div class="h-10 px-8">
+            <img class="block mx-auto" src="img/patrocinadores/patrocinador-logo.svg" alt="Logo do Patrocinador X">
+        </div>
+    </div>
+
+</section>
+
+<!-- Realização -->
+<section id="realizacao" class="w-full text-center md:pt-24 bg-[url('img/bg-left-3.png')] bg-[-15px_top] md:bg-left-top bg-no-repeat opacity-0 intersect:animate-fade-up animate-once animate-delay-300 intersect-once">
+
+    <h2 class="text-info text-base md:text-xl tracking-wider font-semibold mb-0">
+        Conectando conhecimento e prática
+    </h2>
+    <h1 class="mt-2 md:mt-4 mb-10 text-white font-bold text-xl md:text-5xl uppercase">
+        UMA REALIZAÇÃO
+    </h1>
+
+    <div class="md:hidden grid grid-cols-2 opacity-0 intersect:animate-fade-up animate-once animate-delay-500 intersect-once">
+        <div class="flex">
+            <img class="w-24 ml-8" src="img/forja-logo.svg" alt="Logo da Escola Forja">
+        </div>
+        <div class="h-44 overflow-hidden">
+            <img class="w-48 ml-auto mr-6" src="img/pic-realizacao.png" alt="Foto de Eduardo Matos">
+        </div>
+    </div>
+
+    <div class="w-full bg-gradient-to-br from-[#0a2d9c55] to-[#0e0e0ecc] px-4 py-4 md:py-0 opacity-0 intersect:animate-fade-up animate-once animate-delay-700 intersect-once">
+        <div class="max-w-screen-xl mx-auto flex">
+            <div class="w-full flex flex-col gap-4 xl:gap-8 md:w-1/2 md:pt-8 xl:pt-16 md:pl-8 xl:pl-16">
+                <img class="hidden md:block md:w-32 xl:w-44" src="img/forja-logo.svg" alt="Logo da Escola Forja">
+                <p class="text-sm lg:text-base text-white text-left">
+                    A Forja foi criada pois nós acreditamos que não basta levar pancadas para aprender, mas sim levar as pancadas corretas e assim como uma verdadeira forja nós queremos moldar o líder que existe em cada Tech Lead. Se você quiser conhecer mais sobre a Escola Forja e nossos experts, acompanhe o nosso podcast Tech Leadership Rocks!
+                </p>
+                <div class="w-full flex flex-col gap-y-4 mb-4 md:mb-8">
+                    <div class="flex gap-x-3">
+                        <a href="https://open.spotify.com/show/166vlIA456SIjOrd1L96ay" target="_blank" class="hover:scale-110 hover:brightness-150 transition duration-300 ease-in-out">
+                            <img class="w-12" src="img/social-spotify.svg" alt="Botão com ícone do Spotify">
+                        </a>
+                        <a href="https://www.youtube.com/@escolaforja" target="_blank" class="hover:scale-110 hover:brightness-150 transition duration-300 ease-in-out">
+                            <img class="w-12" src="img/social-youtube.svg" alt="Botão com ícone do Youtube">
+                        </a>
+                    </div>
+                  </div>
+            </div>
+            <div class="hidden md:block md:w-1/2 -mt-12 pl-8 opacity-0 intersect:animate-fade-up animate-once animate-delay-1000 intersect-once">
+                <img class="md:w-96 lg:w-[27rem] ml-auto" src="img/pic-realizacao.png" alt="Foto de Eduardo Matos">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Dúvidas frequentes -->
+<section id="#faq" class="w-full md:bg-[url('img/bg-right-3.png')] bg-right-top bg-no-repeat mt-12 md:-mt-32 md:pt-52">
+
+    <div class="max-w-screen-xl mx-auto text-center opacity-0 intersect:animate-fade-up animate-once animate-delay-300 intersect-once">
+        <h2 class="text-info text-base md:text-xl tracking-wider font-semibold mb-0">
+            Saiba mais
+        </h2>
+        <h1 class="mt-2 md:mt-4 mb-10 text-white font-bold text-lg md:text-5xl uppercase">
+            Perguntas Frequentes
+        </h1>
+    </div>
+
+    <div class="flex flex-wrap">
+
+        <div class="hidden md:block md:w-1/3 opacity-0 intersect:animate-fade-right animate-once animate-delay-500 intersect-once">
+            <img class="mx-auto w-full" src="img/pic-faq.jpg" alt="Foto de pessoas sentadas assistindo a uma palestra.">
+        </div>
+    
+        <div class="relative w-full md:w-2/3 h-auto px-4 md:pl-8 md:pr-20 lg:pr-24 xl:pr-32 opacity-0 intersect:animate-fade-up animate-once animate-delay-700 intersect-once">
+        
+            <!-- Pergunta 1 -->
+            <div class="set border-2 border-neutral-900 rounded-lg relative w-full h-auto mb-4 md:mb-8 text-white hover:bg-neutral-900 transition duration-300">
+              <a class="flex place-content-between transition duration-300 cursor-pointer group">
+                <div class="flex text-md md:text-lg font-light items-center">
+                    <span class="px-4 md:px-6">01</span>
+                    <span class="">Lorem ipsum dolor sit amet consectetur. Sagittis id?</span>
+                </div>
+                <div class="flex w-16 lg:w-20 h-16 lg:h-20 bg-neutral-900 group-[.active]:bg-gradient-to-br group-[.active]:from-[#0d183b] group-[.active]:to-[#0e0e0e] items-center justify-center">
+                    <img class="group-[.active]:hidden transition-all duration-300" src="img/icon-plus.svg">
+                    <img class="hidden group-[.active]:block transition-all duration-300" src="img/icon-minus.svg">
+                </div>
+              </a>
+              <div class="content hidden pl-16 ml-2 pr-8 pt-6 pb-12 text-light">
+                <p>Lorem ipsum dolor sit amet consectetur. In augue ipsum tellus ultrices. Ac pharetra ultrices consectetur consequat tellus massa. Nec aliquam cras sagittis duis sed euismod arcu hac. Ornare amet ligula ornare lacus aliquam aenean. Eu lacus imperdiet urna amet congue adipiscing. Faucibus magna nisl ullamcorper in facilisis consequat aliquam. id placerat dui habitasse quisque nisl tincidunt facilisi mi id. Dictum elit velit.</p> 
+              </div>
+            </div>
+           
+            <!-- Pergunta 2 -->
+            <div class="set border-2 border-neutral-900 rounded-lg relative w-full h-auto mb-4 md:mb-8 text-white hover:bg-neutral-900 transition duration-300">
+              <a class="flex place-content-between transition duration-300 cursor-pointer group">
+                <div class="flex text-md md:text-lg font-light items-center">
+                    <span class="px-4 md:px-6">02</span>
+                    <span class="">Lorem ipsum dolor sit amet consectetur. Sagittis id?</span>
+                </div>
+                <div class="flex w-16 lg:w-20 h-16 lg:h-20 bg-neutral-900 group-[.active]:bg-gradient-to-br group-[.active]:from-[#0d183b] group-[.active]:to-[#0e0e0e] items-center justify-center">
+                    <img class="group-[.active]:hidden transition-all duration-300" src="img/icon-plus.svg">
+                    <img class="hidden group-[.active]:block transition-all duration-300" src="img/icon-minus.svg">
+                </div>
+              </a>
+              <div class="content hidden pl-16 ml-2 pr-8 pt-6 pb-12 text-light">
+                <p>Lorem ipsum dolor sit amet consectetur. In augue ipsum tellus ultrices. Ac pharetra ultrices consectetur consequat tellus massa. Nec aliquam cras sagittis duis sed euismod arcu hac. Ornare amet ligula ornare lacus aliquam aenean. Eu lacus imperdiet urna amet congue adipiscing. Faucibus magna nisl ullamcorper in facilisis consequat aliquam. id placerat dui habitasse quisque nisl tincidunt facilisi mi id. Dictum elit velit.</p> 
+              </div>
+            </div>
+            
+           
+            <!-- Pergunta 3 -->
+            <div class="set border-2 border-neutral-900 rounded-lg relative w-full h-auto mb-4 md:mb-8 text-white hover:bg-neutral-900 transition duration-300">
+              <a class="flex place-content-between transition duration-300 cursor-pointer group">
+                <div class="flex text-md md:text-lg font-light items-center">
+                    <span class="px-4 md:px-6">03</span>
+                    <span class="">Lorem ipsum dolor sit amet consectetur. Sagittis id?</span>
+                </div>
+                <div class="flex w-16 lg:w-20 h-16 lg:h-20 bg-neutral-900 group-[.active]:bg-gradient-to-br group-[.active]:from-[#0d183b] group-[.active]:to-[#0e0e0e] items-center justify-center">
+                    <img class="group-[.active]:hidden transition-all duration-300" src="img/icon-plus.svg">
+                    <img class="hidden group-[.active]:block transition-all duration-300" src="img/icon-minus.svg">
+                </div>
+              </a>
+              <div class="content hidden pl-16 ml-2 pr-8 pt-6 pb-12 text-light">
+                <p>Lorem ipsum dolor sit amet consectetur. In augue ipsum tellus ultrices. Ac pharetra ultrices consectetur consequat tellus massa. Nec aliquam cras sagittis duis sed euismod arcu hac. Ornare amet ligula ornare lacus aliquam aenean. Eu lacus imperdiet urna amet congue adipiscing. Faucibus magna nisl ullamcorper in facilisis consequat aliquam. id placerat dui habitasse quisque nisl tincidunt facilisi mi id. Dictum elit velit.</p> 
+              </div>
+            </div>
+            
+           
+            <!-- Pergunta 4 -->
+            <div class="set border-2 border-neutral-900 rounded-lg relative w-full h-auto mb-4 md:mb-8 text-white hover:bg-neutral-900 transition duration-300">
+              <a class="flex place-content-between transition duration-300 cursor-pointer group">
+                <div class="flex text-md md:text-lg font-light items-center">
+                    <span class="px-4 md:px-6">04</span>
+                    <span class="">Lorem ipsum dolor sit amet consectetur. Sagittis id?</span>
+                </div>
+                <div class="flex w-16 lg:w-20 h-16 lg:h-20 bg-neutral-900 group-[.active]:bg-gradient-to-br group-[.active]:from-[#0d183b] group-[.active]:to-[#0e0e0e] items-center justify-center">
+                    <img class="group-[.active]:hidden transition-all duration-300" src="img/icon-plus.svg">
+                    <img class="hidden group-[.active]:block transition-all duration-300" src="img/icon-minus.svg">
+                </div>
+              </a>
+              <div class="content hidden pl-16 ml-2 pr-8 pt-6 pb-12 text-light">
+                <p>Lorem ipsum dolor sit amet consectetur. In augue ipsum tellus ultrices. Ac pharetra ultrices consectetur consequat tellus massa. Nec aliquam cras sagittis duis sed euismod arcu hac. Ornare amet ligula ornare lacus aliquam aenean. Eu lacus imperdiet urna amet congue adipiscing. Faucibus magna nisl ullamcorper in facilisis consequat aliquam. id placerat dui habitasse quisque nisl tincidunt facilisi mi id. Dictum elit velit.</p> 
+              </div>
+            </div>
+            
+           
+            <!-- Pergunta 5 -->
+            <div class="set border-2 border-neutral-900 rounded-lg relative w-full h-auto mb-4 md:mb-8 text-white hover:bg-neutral-900 transition duration-300">
+              <a class="flex place-content-between transition duration-300 cursor-pointer group">
+                <div class="flex text-md md:text-lg font-light items-center">
+                    <span class="px-4 md:px-6">05</span>
+                    <span class="">Lorem ipsum dolor sit amet consectetur. Sagittis id?</span>
+                </div>
+                <div class="flex w-16 lg:w-20 h-16 lg:h-20 bg-neutral-900 group-[.active]:bg-gradient-to-br group-[.active]:from-[#0d183b] group-[.active]:to-[#0e0e0e] items-center justify-center">
+                    <img class="group-[.active]:hidden transition-all duration-300" src="img/icon-plus.svg">
+                    <img class="hidden group-[.active]:block transition-all duration-300" src="img/icon-minus.svg">
+                </div>
+              </a>
+              <div class="content hidden pl-16 ml-2 pr-8 pt-6 pb-12 text-light">
+                <p>Lorem ipsum dolor sit amet consectetur. In augue ipsum tellus ultrices. Ac pharetra ultrices consectetur consequat tellus massa. Nec aliquam cras sagittis duis sed euismod arcu hac. Ornare amet ligula ornare lacus aliquam aenean. Eu lacus imperdiet urna amet congue adipiscing. Faucibus magna nisl ullamcorper in facilisis consequat aliquam. id placerat dui habitasse quisque nisl tincidunt facilisi mi id. Dictum elit velit.</p> 
+              </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+<section class="w-full md:bg-[url('img/bg-bottom.png')] bg-right-bottom bg-no-repeat mt-4 opacity-0 intersect:animate-fade animate-once animate-delay-700 intersect-once intersect-half">
+
+    <div class="max-w-screen-lg mx-auto text-center text-white px-8">
+        <h1 class="mt-10 md:mt-4 mb-4 md:mb-10  font-bold text-lg md:text-5xl uppercase">
+            Participe e transforme sua carreira
+        </h1>
+        <p class="max-w-3xl mx-auto mb-8 font-light text-sm md:text-lg lg:text-xl">
+            Não fique de fora! Junte-se a nós para explorar cases reais, aprender com os melhores e se conectar com a comunidade de desenvolvedores. Reserve seu lugar e eleve seu conhecimento ao próximo nível.
+        </p>
+
+        <a href="#" target="_blank" class="mx-auto mb-16 text-white inline-block font-semibold bg-primary border border-primary px-2 px-4 lg:px-6 py-2 text-center hover:bg-secondary hover:scale-105 focus:ring-2 focus:outline-none focus:ring-blue-300 rounded-full md:rounded-xl transition duration-300 text-sm md:text-md">
+            Comprar Ingresso
+        </a>
+    </div>
+</section>
+
+<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+    
+<script> 
+
+    $('.logos-slick').slick({
+        centerMode: true,
+        arrows: false,
+        centerPadding: '60px',
+        slidesToShow: 5,
+        responsive: [
+            {
+            breakpoint: 1024,
+            settings: {
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 2
+            }
+            }
+        ]
+    });
+
+
+    $(function() {
+		$( "#tabs" ).tabs({
+            active: 0,
+            show: { effect: "fadeIn", duration: 300 },
+            hide: { effect: "fadeOut", duration: 300 }
+        });
+	});
+
+    // Accorion
+    $(document).ready(function() {
+      $(".set > a").on("click", function() {
+        if ($(this).hasClass("active")) {
+          $(this).removeClass("active");
+          $(this)
+            .siblings(".content")
+            .slideUp(200);
+        } else {
+          $(".set > a").removeClass("active");
+          $(this).addClass("active");
+          $(".content").slideUp(200);
+          $(this)
+            .siblings(".content")
+            .slideDown(200);
+        }
+      });
+    });
+  
+    // Mobile menu
+    document.addEventListener('DOMContentLoaded', function() {
+        // open
+        const burger = document.querySelectorAll('.navbar-burger');
+        const menu = document.querySelectorAll('.main-menu');
+  
+        if (burger.length && menu.length) {
+            for (var i = 0; i < burger.length; i++) {
+                burger[i].addEventListener('click', function() {
+                    for (var j = 0; j < menu.length; j++) {
+                        menu[j].classList.toggle('!max-h-screen');
+                    }
+                });
+            }
+        }
+    });
+  
+</script>
+
+</body>
+</html>
