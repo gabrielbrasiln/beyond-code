@@ -108,7 +108,10 @@
         </div>
 
         <div class="w-full md:w-1/2 z-10">
-            <img class="mx-auto w-full md:rounded-tl-xl" src="img/pic-evento.png" alt="Foto de um homem em uma sala dando uma palestra para pessoas que estão sentadas a sua frente.">
+            <video class="md:rounded-l-xl z-10 shadow-xl shadow-black" autoplay loop muted poster="./img/video-poster.jpg">
+                <source src="./img/video-evento.mp4" type="video/mp4">
+            </video>
+            <img src="./img/bg-video.png" class="w-full">
         </div>
 
     </div>
@@ -837,7 +840,16 @@
         Nossos patrocinadores
     </h1>
 
-    <div class="logos-slick my-16 xl:mb-24">
+    <div class="logos-slick my-20 xl:mb-24">
+        <div class="h-10 px-8">
+            <img class="block mx-auto" src="img/patrocinadores/patrocinador-logo.svg" alt="Logo do Patrocinador X">
+        </div>
+        <div class="h-10 px-8">
+            <img class="block mx-auto" src="img/patrocinadores/patrocinador-logo.svg" alt="Logo do Patrocinador X">
+        </div>
+        <div class="h-10 px-8">
+            <img class="block mx-auto" src="img/patrocinadores/patrocinador-logo.svg" alt="Logo do Patrocinador X">
+        </div>
         <div class="h-10 px-8">
             <img class="block mx-auto" src="img/patrocinadores/patrocinador-logo.svg" alt="Logo do Patrocinador X">
         </div>
@@ -1040,7 +1052,8 @@
         centerMode: true,
         arrows: false,
         autoplay: true,
-        centerPadding: '60px',
+        autoplaySpeed: 500,
+        speed: 2000,
         slidesToShow: 5,
         responsive: [
             {
