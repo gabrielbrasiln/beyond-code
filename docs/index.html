@@ -29,7 +29,7 @@
       
         <!-- Logo -->
         <a href="index.html" class="flex md:pl-2 xl:pl-4">
-            <img src="./img/beyond-code-conference-logo.svg" class="h-4" alt="Logo Beyond Code Conference">
+            <img src="./img/beyond-code-conference-logo.svg" class="h-3 md:h-4" alt="Logo Beyond Code Conference">
         </a>
   
         <!-- Botões do Menu -->
@@ -91,9 +91,9 @@
     
                 <div class="flex flex-wrap w-full">
     
-                    <p class="text-base lg:text-xl text-white font-bold">
+                    <p class="text-sm md:text-base lg:text-xl text-white font-bold">
                         20 de Novembro 2024<br>
-                        <span class="text-base font-normal">Local do evento</span>
+                        <span class="text-sm md:text-base font-normal">Local do evento</span>
                     </p>
                     
                     <div class="flex grow items-center justify-center">
@@ -113,7 +113,7 @@
 
     </div>
     
-    <div class="w-full flex flex-wrap text-white text-center mt-8 md:-mt-16 md:pt-36 xl:px-20 md:bg-[url('img/bg-right.png')] bg-right-top bg-no-repeat opacity-0 intersect:animate-fade-up animate-once animate-delay-[1500ms] intersect-once">
+    <div class="w-full flex flex-wrap text-white text-center mt-8 md:-mt-16 md:pt-36 xl:px-20 md:bg-[url('img/bg-right.png')] bg-right-top bg-no-repeat opacity-0 intersect:animate-fade-up animate-once animate-delay-1000ms intersect-once">
 
         <div class="w-1/2 md:w-1/4 px-4 py-4 lg:py-10 bg-gradient-to-r from-[#0d173aCC] to-[#0e0e0e00] hover:scale-105 transition-all duration-300">
             <h2 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-3 lg:mb-5">
@@ -166,7 +166,7 @@
             Confira nossos eventos simultâneos
         </p>
         
-        <div class="w-full mt-6 text-left opacity-0 intersect:animate-fade-up animate-once animate-delay-500 intersect-once intersect-half">
+        <div class="w-full mt-6 text-left opacity-0 intersect:animate-fade-up animate-once animate-delay-500 intersect-once">
             <div id="tabs" class="w-full">
                 <ul class="flex flex-wrap justify-between text-sm font-medium text-center text-white bg-gradient-to-br from-[#0d183b] to-[#0e0e0e] rounded-xl py-3 px-1 mb-12">
                     <li class=" md:w-1/4 px-2">
@@ -1039,6 +1039,7 @@
     $('.logos-slick').slick({
         centerMode: true,
         arrows: false,
+        autoplay: true,
         centerPadding: '60px',
         slidesToShow: 5,
         responsive: [
