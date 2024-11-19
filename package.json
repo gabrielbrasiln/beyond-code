@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "build": "npx tailwindcss -i ./public/input.css -o ./public/output.css"
+  },
   "devDependencies": {
     "tailwindcss-intersect": "^2.0.1"
   },

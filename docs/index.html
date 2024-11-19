@@ -4,6 +4,19 @@
     <title>Beyond Code Conference</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Beyond Code">
+    <meta property="og:type" content="website">
+  
+    <meta property="og:title" content="Beyond Code • Conference">
+    <meta property="og:description" content="Evento 100% focado em estudos de caso na área de Tecnologia">
+    <meta property="og:url" content="https://beyond.escolaforja.com.br/">
+    <meta property="og:image" content="https://beyond.escolaforja.com.br/img/beyond-code-fb.png">
+    <meta property="og:image:secure_url" content="https://beyond.escolaforja.com.br/img/beyond-code-fb.png">
+    <meta property="og:image:width" content="546">
+    <meta property="og:image:height" content="546">
+
     <link href="./output.css" rel="stylesheet">
     
     <script src="js/observer.min.js"></script>
@@ -11,6 +24,8 @@
     <script src="vendor/jquery/jquery-3.7.1.min.js"></script>
     <link href="vendor/jquery/jquery-ui.css" rel="stylesheet">
     <script src="vendor/jquery/jquery-ui.min.js" type="text/javascript"></script>
+
+    <script src="js/countdown.min.js" type="text/javascript"></script>
 
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css"/>
@@ -35,7 +50,7 @@
         <!-- Botões do Menu -->
         <div class="flex lg:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse sm:gap-x-3 lg:gap-x-5">
            
-            <a href="#" class="text-white font-semibold bg-primary border border-primary px-2 px-4 lg:px-6 py-2 text-center hover:bg-secondary hover:scale-105 focus:ring-2 focus:outline-none focus:ring-blue-300 rounded-full md:rounded-xl transition duration-300 text-sm md:text-md">
+            <a href="#" class="text-white font-semibold bg-primary border border-primary px-2 px-4 lg:px-6 py-2 text-center hover:bg-secondary hover:scale-105 focus:ring-2 focus:outline-none focus:ring-blue-300 rounded-full md:rounded-xl transition duration-300 text-sm md:text-base xl:text-lg">
                 Quero participar
             </a>
 
@@ -71,7 +86,7 @@
     </div>
 </nav>
 
-<section id="#evento" class="w-full overflow-hidden bg-[url('img/bg-left.png')] bg-[-80px_230px] md:bg-left-top bg-no-repeat mt-6 md:mt-8 md:mt-20 opacity-0 intersect:animate-fade-up animate-once animate-delay-300 intersect-once">
+<section id="#evento" class="w-full bg-[url('img/bg-left.png')] bg-[-80px_230px] md:bg-left-top bg-no-repeat mt-6 md:mt-8 md:mt-20 z-10 relative opacity-0 intersect:animate-fade-up animate-once animate-delay-300 intersect-once">
     <div class="px-0 md:pl-8 xl:pl-20 flex flex-wrap mx-auto relative">
         
         <!-- Sobre o evento -->
@@ -97,7 +112,7 @@
                     </p>
                     
                     <div class="flex grow items-center justify-center">
-                        <a href="#" target="_blank" class="text-white font-semibold bg-primary border border-primary px-2 md:px-4 lg:px-6 py-2 text-center hover:bg-secondary hover:scale-105 focus:ring-2 focus:outline-none focus:ring-blue-300 rounded-full md:rounded-xl transition duration-300 text-sm md:text-md">
+                        <a href="#" target="_blank" class="text-white font-semibold bg-primary border border-primary px-2 md:px-4 lg:px-6 py-2 text-center hover:bg-secondary hover:scale-105 focus:ring-2 focus:outline-none focus:ring-blue-300 rounded-full md:rounded-xl transition duration-300 text-sm md:text-base xl:text-lg">
                             Comprar Ingresso
                         </a>
                     </div>
@@ -115,44 +130,83 @@
         </div>
 
     </div>
+
     
-    <div class="w-full flex flex-wrap text-white text-center mt-8 md:-mt-16 md:pt-36 xl:px-20 md:bg-[url('img/bg-right.png')] bg-right-top bg-no-repeat opacity-0 intersect:animate-fade-up animate-once animate-delay-1000ms intersect-once">
+</section>
 
-        <div class="w-1/2 md:w-1/4 px-4 py-4 lg:py-10 bg-gradient-to-r from-[#0d173aCC] to-[#0e0e0e00] hover:scale-105 transition-all duration-300">
-            <h2 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-3 lg:mb-5">
-                01
-            </h2>
-            <p class="text-base md:text-base lg:text-xl xl:text-2xl font-light">
-                Dia de evento Simultâneo
-            </p>
-        </div>
-        <div class="w-1/2 md:w-1/4 px-4 py-4 lg:py-10 bg-gradient-to-r from-[#0d173a80] to-[#0e0e0e00] hover:scale-105 transition-all duration-300">
-            <h2 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-3 lg:mb-5">
-                30
-            </h2>
-            <p class="text-base md:text-base lg:text-xl xl:text-2xl font-light">
-                Palestras<br>de cases
-            </p>
-        </div>
-        <div class="w-1/2 md:w-1/4 px-4 py-4 lg:py-10 bg-gradient-to-r from-[#0d173a60] to-[#0e0e0e00] hover:scale-105 transition-all duration-300">
-            <h2 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-3 lg:mb-5">
-                +20
-            </h2>
-            <p class="text-base md:text-base lg:text-xl xl:text-2xl font-light">
-                Cases reais<br>para escolher!
-            </p>
-        </div>
-        <div class="w-1/2 md:w-1/4 px-4 py-4 lg:py-10 bg-gradient-to-r from-[#0d173a40] to-[#0e0e0e00] hover:scale-105 transition-all duration-300">
-            <h2 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-3 lg:mb-5">
-                Plus
-            </h2>
-            <p class="text-base md:text-base lg:text-xl xl:text-2xl font-light">
-                Mentoria<br>Presencial
-            </p>
-        </div>
+<!-- Contador -->
+<section id="countdown" class="sticky top-0 w-full z-10 opacity-0 intersect:animate-fade-up animate-once animate-delay-700 intersect-once">
+    <div class="max-w-screen-lg mx-auto mt-3 pt-3 md:mt-5 md:pt-5 px-2 md:px-5">
+        <div class="p-4 xl:mx-4 mt-3 relative bg-gradient-to-br from-[#0d183b] to-[#10266ff0] rounded-xl">
+            <img src="./img/close.png" alt="Fechar Contador" class="card-close h-7 w-7 rounded-full absolute top-[-15px] right-5 bg-white/75 cursor-pointer">
+            <div class="xl:px-5 py-2">
+                <div class="flex flex-wrap items-center justify-center">
+                    <ul id="countdown" class="p-0 grow block text-left text-white text-center">
+                        <li class="inline-block w-12 sm:w-16 md:w-24">
+                            <span class="days font-bold text-3xl md:text-5xl lg:text-6xl leading-none">00</span>
+                            <p class="days_text text-lg md:text-xl">Dias</p>
+                        </li>
+                        <li class="inline-block text-3xl md:text-7xl w-4 sm:w-6 md:w-8 -mt-8" class="seperator">:</li>
+                        <li class="inline-block w-12 sm:w-16 md:w-24">
+                            <span class="hours font-bold text-3xl md:text-5xl lg:text-6xl leading-none">00</span>
+                            <p class="hours_text text-lg md:text-xl">Horas</p>
+                        </li>
+                        <li class="inline-block text-3xl md:text-7xl w-4 sm:w-6 md:w-8 -mt-8" class="seperator">:</li>
+                        <li class="inline-block w-12 sm:w-16 md:w-24">
+                            <span class="minutes font-bold text-3xl md:text-5xl lg:text-6xl leading-none">00</span>
+                            <p class="minutes_text text-lg md:text-xl">Min</p>
+                        </li>
+                        <li class="inline-block text-3xl md:text-7xl w-4 sm:w-6 md:w-8 -mt-8" class="seperator">:</li>
+                        <li class="inline-block w-12 sm:w-16 md:w-24">
+                            <span class="seconds font-bold text-3xl md:text-5xl lg:text-6xl leading-none">00</span>
+                            <p class="seconds_text text-lg md:text-xl">Seg</p>
+                        </li>
+                    </ul>
 
+                    <div class="mt-6 md:mt-0 lg:mx-12">
+                        <a href="#" class="text-white font-semibold bg-primary border border-primary px-2 md:px-4 lg:px-6 py-2 text-center hover:bg-secondary hover:scale-105 focus:ring-2 focus:outline-none focus:ring-blue-300 rounded-full md:rounded-xl transition duration-300 text-sm md:text-base xl:text-lg">Comprar ingresso</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    
+</section>
+
+<section id="milestones" class="w-full flex flex-wrap text-white text-center mt-8 md:-mt-16 md:pt-36 xl:px-20 md:bg-[url('img/bg-right.png')] bg-right-top bg-no-repeat z-0 opacity-0 intersect:animate-fade-up animate-once animate-delay-500 intersect-once">
+
+    <div class="w-1/2 md:w-1/4 px-4 py-4 lg:py-10 bg-gradient-to-r from-[#0d173aCC] to-[#0e0e0e00] hover:scale-105 transition-all duration-300">
+        <h2 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-3 lg:mb-5">
+            01
+        </h2>
+        <p class="text-base md:text-base lg:text-xl xl:text-2xl font-light">
+            Dia de evento Simultâneo
+        </p>
+    </div>
+    <div class="w-1/2 md:w-1/4 px-4 py-4 lg:py-10 bg-gradient-to-r from-[#0d173a80] to-[#0e0e0e00] hover:scale-105 transition-all duration-300">
+        <h2 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-3 lg:mb-5">
+            30
+        </h2>
+        <p class="text-base md:text-base lg:text-xl xl:text-2xl font-light">
+            Palestras<br>de cases
+        </p>
+    </div>
+    <div class="w-1/2 md:w-1/4 px-4 py-4 lg:py-10 bg-gradient-to-r from-[#0d173a60] to-[#0e0e0e00] hover:scale-105 transition-all duration-300">
+        <h2 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-3 lg:mb-5">
+            +20
+        </h2>
+        <p class="text-base md:text-base lg:text-xl xl:text-2xl font-light">
+            Cases reais<br>para escolher!
+        </p>
+    </div>
+    <div class="w-1/2 md:w-1/4 px-4 py-4 lg:py-10 bg-gradient-to-r from-[#0d173a40] to-[#0e0e0e00] hover:scale-105 transition-all duration-300">
+        <h2 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-3 lg:mb-5">
+            Plus
+        </h2>
+        <p class="text-base md:text-base lg:text-xl xl:text-2xl font-light">
+            Mentoria<br>Presencial
+        </p>
+    </div>
+
 </section>
 
 <section id="trilhas" class="w-full mt-8 xl:mt-20 pt-8 bg-[url('img/bg-left-2.png')] bg-[-130px_0] md:bg-left-top bg-no-repeat text-center">
@@ -753,7 +807,7 @@
         </div>
     </div>
 
-    <a href="palestrantes.html" class="mx-auto text-white inline-block font-semibold bg-primary border border-primary px-2 px-4 lg:px-6 py-2 mb-4 text-center hover:bg-secondary hover:scale-105 focus:ring-2 focus:outline-none focus:ring-blue-300 rounded-full md:rounded-xl transition duration-300 text-sm md:text-md">
+    <a href="palestrantes.html" class="mx-auto text-white inline-block font-semibold bg-primary border border-primary px-2 px-4 lg:px-6 py-2 mb-4 text-center hover:bg-secondary hover:scale-105 focus:ring-2 focus:outline-none focus:ring-blue-300 rounded-full md:rounded-xl transition duration-300 text-sm md:text-base xl:text-lg">
         Ver todos os palestrantes
     </a>
 </section>
@@ -1038,7 +1092,7 @@
             Não fique de fora! Junte-se a nós para explorar cases reais, aprender com os melhores e se conectar com a comunidade de desenvolvedores. Reserve seu lugar e eleve seu conhecimento ao próximo nível.
         </p>
 
-        <a href="#" target="_blank" class="mx-auto mb-16 text-white inline-block font-semibold bg-primary border border-primary px-2 px-4 lg:px-6 py-2 text-center hover:bg-secondary hover:scale-105 focus:ring-2 focus:outline-none focus:ring-blue-300 rounded-full md:rounded-xl transition duration-300 text-sm md:text-md">
+        <a href="#" target="_blank" class="mx-auto mb-16 text-white inline-block font-semibold bg-primary border border-primary px-2 px-4 lg:px-6 py-2 text-center hover:bg-secondary hover:scale-105 focus:ring-2 focus:outline-none focus:ring-blue-300 rounded-full md:rounded-xl transition duration-300 text-sm md:text-base xl:text-lg">
             Comprar Ingresso
         </a>
     </div>
@@ -1047,6 +1101,28 @@
 <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
     
 <script> 
+
+    // Inicializa Contador
+    $('#countdown').countdown({
+        date: '02/08/2025 00:00:00',
+        offset: -3,  // fuso
+        day: 'Dia',
+        days: 'Dias',
+        hour: 'Hora',
+        hours: 'Horas',
+        minute: 'Min',
+        minutes: 'Min',
+        second: 'Seg',
+        seconds: 'Seg'
+        },
+    );
+
+    // Esconde o contador
+    $(function() {
+        $(".card-close").click(function() {
+            $("#countdown").addClass("hidden");
+        });
+    });
 
     $('.logos-slick').slick({
         centerMode: true,
